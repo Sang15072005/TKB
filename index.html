@@ -132,6 +132,30 @@
       float: right;
       cursor: pointer;
     }
+    @media print {
+  body {
+    background: white;
+    padding: 0;
+  }
+
+  .popup-overlay, button, h1 + div {
+    display: none !important;
+  }
+
+  table {
+    box-shadow: none;
+    width: 100%;
+  }
+
+  th, td {
+    font-size: 12pt;
+    border: 1px solid black;
+  }
+
+  h1 {
+    color: black;
+  }
+}
   </style>
 </head>
 <body>
